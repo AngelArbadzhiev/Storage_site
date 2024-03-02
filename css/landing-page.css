@@ -1,25 +1,44 @@
-.logo-container{
-  margin: 1rem;
-  padding: 2rem 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+body{
+  font-family: "Roboto",sans-serif;
+  background-color: eef0f2;
 }
-
-.logo-img {
-  display: inline-block;
+.navigation{
+  display: flex;
+  justify-content: space-between;
+}
+.logo-container:hover {
+  border: 2px solid red;
+}
+.logo-container{
+  display: flex;
+  width:fit-content;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.logo-img{
   width: 80px;
   height: auto;
-  padding: 1rem 1rem;
-  
 }
-.company-name-container{
-  display: inline-block;
-  vertical-align: top;
-  font-size: 30px;
-  padding: 1rem 1rem;
+.company-name{
+  font-family:"Roboto",sans-serif ;
+  font-weight: 700;
+  font-style: italic;
+  font-style: bold;
 }
-@media screen and (max-width: 640px) {
-  /* On small screens, we want the company*/
-  /* name to be on its own line */
-  
-
+.menu{
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  list-style:  none;  
+}
+#login-btn{
+  display: flex;
+  justify-content: space-between;
+}
+#register-btn{
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
 }
